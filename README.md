@@ -1,4 +1,4 @@
-#etch-a-sketch
+# etch-a-sketch
 
 This is an assignment from The Odin Project: https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
