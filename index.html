@@ -31,13 +31,19 @@
     <title>etch-a-sketch</title>
   </head>
   <body>
+    <!-- ------ -->
+    <!--Header  -->
+    <!-- ------ -->
     <header class="header">
       <h1>etch-a-sketch</h1>
     </header>
+    <!-- ---- -->
+    <!-- Main -->
+    <!-- ---- -->
     <main class="main">
       <div class="settings-left">
         <div class="color-picker-container">
-          <input type="color" value="#144444" id="color-picker" />
+          <input type="color" value="#144444" class="color-picker" />
         </div>
         <button class="button" id="color-button">
           &#8599; Color mode &#8598;
@@ -45,13 +51,31 @@
         <button class="button" id="rainbow-button">Rainbow mode</button>
         <button class="button" id="greyscale-button">Greyscale mode</button>
       </div>
-      <div class="grid"></div>
+      <div class="grid" id="grid"></div>
       <div class="settings-right">
-        <button class="button">Eraser</button>
-        <button class="button">Clear</button>
-        <button class="button">Grid size</button>
+        <button class="button" id="eraser-button">Eraser</button>
+        <button class="button" id="clear-button">Clear</button>
+        <button class="button" id="size-button">Grid size</button>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <!-- ------ -->
+    <!-- Footer -->
+    <!-- ------ -->
+    <footer class="footer">
+      <p>
+        <a
+          class="github-link"
+          title="GitHub repo for this project"
+          href="https://github.com/ajjdunn/etch-a-sketch"
+          ><img src="images/github.svg" class="github-icon"
+        /></a>
+      </p>
+      <p id="footer-p">
+        Created by Aaron Dunn for
+        <a href="https://theodinproject.com/" class="odin-link"
+          >The Odin Project</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
