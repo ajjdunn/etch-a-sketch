@@ -16,3 +16,12 @@ buttons.forEach((button) => {
     alert(button.id);
   });
 });
+
+// BASIC TOGGLE TO IMPLEMENT - replace classes and names to suit ⬇️
+const panels = document.querySelectorAll(".panel");
+
+function toggleOpen() {
+  this.classList.toggle("open");
+}
+
+panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
